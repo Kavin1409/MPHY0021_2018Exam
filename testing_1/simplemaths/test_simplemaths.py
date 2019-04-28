@@ -27,6 +27,7 @@ class TestSimpleMaths():
         all_matches = True
         value_arr = [1,5,7,2, -3]
         for val in value_arr:
+            # can use self. number defined in __init__ to get back the same value!
             check = val == sm(val).number
             if not check:
                 all_matches = False
